@@ -58,7 +58,7 @@ public class BaseTest {
     @Test
     public void launchApplicationUnderTest() {
         driver.get(prop.getProperty("url"));
-        Assert.assertEquals("CNA - Breaking news, latest developments in Singapore, Asia and around the world", driver.getTitle());
+        Assert.assertEquals(prop.getProperty("title"), driver.getTitle());
     }
 
 }
